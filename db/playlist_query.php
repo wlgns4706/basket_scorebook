@@ -4,6 +4,7 @@
             include "./db.php";
             session_start();
             
+            #세션값 없을시 12(데모계정)으로 통일
             if (!$_SESSION['TeamId']){
                 $TeamId = 12;
             }else{
